@@ -1,0 +1,75 @@
+body {
+    position: relative;
+    font-family: Lato, sans-serif;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+#menu ul {
+    margin: 0; 
+    padding: 0;
+}
+
+#menu li {
+    list-style-type: none;
+}
+
+#menu > li {
+    float: left;
+}
+
+#menu > li > a {
+    padding: 25px;
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, rgb(22, 56, 107) 44%, rgba(73,63,242,1) 100%, rgba(0,212,255,1) 100%);   
+    opacity: 0.8;
+    border-left: 1px solid white;
+    width: 200px;
+    height: auto;
+    text-align: center;
+}
+
+#menu > li:first-child > a {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#menu > li:last-child > a {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#menu > li > a:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#menu > li ul li a {
+    background: linear-gradient(90deg, rgb(22, 56, 107) 44%, rgba(73,63,242,1) 100%, rgba(0,212,255,1) 100%);   
+    padding: 15px 30px;
+    border: 1px solid white;
+    font-size: 1rem;
+    opacity: 0.8;
+    width: 190px;
+}
+
+#menu > li ul li a:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#menu > li ul {
+    position: absolute;
+    opacity: 0;
+}
+
+#menu > li:hover > ul {
+    opacity: 1;
+    transition: .5s;
+}
